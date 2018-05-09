@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.leandro.cursomc.domain.Categoria;
-import com.leandro.cursomc.repositories.CateoriaRepository;
+import com.leandro.cursomc.repositories.CategoriaRepository;
 
 @Service
 public class CategoriaService {
 
 	@Autowired
-	private CateoriaRepository repo;
+	private CategoriaRepository repo;
 	
 	public Categoria buscar(Integer id) {
 		Optional<Categoria> obj = repo.findById(id);
