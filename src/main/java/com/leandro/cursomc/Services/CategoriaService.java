@@ -3,8 +3,10 @@ package com.leandro.cursomc.Services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
+import com.leandro.cursomc.Services.exceptions.DataIntegrityException;
 import com.leandro.cursomc.Services.exceptions.ObjectNotFoundException;
 import com.leandro.cursomc.domain.Categoria;
 import com.leandro.cursomc.repositories.CategoriaRepository;
@@ -32,5 +34,15 @@ public class CategoriaService {
 	public Categoria update(Categoria obj) {
 		find(obj.getId());
 		return repo.save(obj);
+	}
+	
+	public void delete(Integer id) {
+		find(id);
+		try {
+		repo.deleteById(id);
+		}
+		catch(DataIntegrityViolationException e) {
+			throw new DataIntegrityException("Náo possivél excluir uma categoria que tenha produtos associados.");
+		}
 	}
 }
