@@ -1,5 +1,8 @@
 package com.leandro.cursomc.dot;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import com.leandro.cursomc.domain.Categoria;
 
 public class CategoriaDTO {
@@ -8,9 +11,14 @@ public class CategoriaDTO {
 	
 	
 
+	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
+	
+	
+	@NotEmpty(message="Preenchimento obrigatório")
+	@Length(min=5,max=80,message="O tamanho deve ser entre 5 e 80 caracteres" )
 	private String nome;
 	
 	
