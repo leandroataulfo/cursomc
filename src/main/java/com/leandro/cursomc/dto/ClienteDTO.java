@@ -1,4 +1,4 @@
-package com.leandro.cursomc.dot;
+package com.leandro.cursomc.dto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;

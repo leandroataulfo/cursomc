@@ -20,8 +20,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.leandro.cursomc.Services.ClienteService;
 import com.leandro.cursomc.domain.Cliente;
-import com.leandro.cursomc.dot.ClienteDTO;
-import com.leandro.cursomc.dot.ClienteNewDTO;
+import com.leandro.cursomc.dto.ClienteDTO;
+import com.leandro.cursomc.dto.ClienteNewDTO;
 
 @RestController
 @RequestMapping(value="/clientes")

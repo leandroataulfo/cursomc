@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import com.leandro.cursomc.Services.exceptions.DataIntegrityException;
 import com.leandro.cursomc.Services.exceptions.ObjectNotFoundException;
 import com.leandro.cursomc.domain.Categoria;
-import com.leandro.cursomc.dot.CategoriaDTO;
+import com.leandro.cursomc.dto.CategoriaDTO;
 import com.leandro.cursomc.repositories.CategoriaRepository;
 
 

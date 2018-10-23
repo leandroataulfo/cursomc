@@ -16,8 +16,8 @@ import com.leandro.cursomc.domain.Cidade;
 import com.leandro.cursomc.domain.Cliente;
 import com.leandro.cursomc.domain.Endereco;
 import com.leandro.cursomc.domain.enums.TipoCliente;
-import com.leandro.cursomc.dot.ClienteDTO;
-import com.leandro.cursomc.dot.ClienteNewDTO;
+import com.leandro.cursomc.dto.ClienteDTO;
+import com.leandro.cursomc.dto.ClienteNewDTO;
 import com.leandro.cursomc.repositories.ClienteRepository;
 import com.leandro.cursomc.repositories.EnderecoRepository;
 

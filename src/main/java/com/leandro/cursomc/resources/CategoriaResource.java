@@ -19,7 +19,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.leandro.cursomc.Services.CategoriaService;
 import com.leandro.cursomc.domain.Categoria;
-import com.leandro.cursomc.dot.CategoriaDTO;
+import com.leandro.cursomc.dto.CategoriaDTO;
 
 @RestController
 @RequestMapping(value = "/categorias")

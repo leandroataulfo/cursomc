@@ -1,4 +1,4 @@
-package com.leandro.cursomc.dot;
+package com.leandro.cursomc.dto;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
