@@ -5,8 +5,10 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.leandro.cursomc.Services.Validation.ClienteUpdate;
 import com.leandro.cursomc.domain.Cliente;
 
+@ClienteUpdate
 public class ClienteDTO {
 
 	@SuppressWarnings("unused")
